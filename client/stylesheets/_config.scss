@@ -1,0 +1,78 @@
+//==============================================================
+//  GLOBAL CONFIG
+//==============================================================
+
+//  FONT STACK
+// see _utilities vvvvvvvv
+// $font-url--google      : https://fonts.googleapis.com/css?family=Rajdhani;
+
+$font-family--primary  : 'Shrikhand', cursive;
+$font-family--secondary: 'Josefin Slab', serif;
+$font-family--tertiary : ;
+
+//  FONT WEIGHTS
+
+$font-weight--thin  : 100;
+$font-weight--light : 300;
+$font-weight--medium: 400;
+$font-weight--bold  : 700;
+$font-weight--bolder: 900;
+
+// Border
+$border: 2.5px solid;
+$bRad: 5px;
+
+
+//  DESCRIPTIVE BASE COLORS __ http://chir.ag/projects/name-that-color/
+
+$white: #FFFBF4;
+$black: #121212;
+$grey : lightslategray;
+
+$grn: olivedrab;
+$amethyst:  #A76BCC;
+$amethystSmoke: #A99BB2;
+$drifwood:  #B29256;
+$tamarillo: #B20006;
+
+//  FUNCTIONAL COLORS
+
+$color-primary: $grn;
+$color-secondary: $amethyst;
+$color-teritiary: $drifwood;
+$color-accent: $tamarillo;
+$color-shadow: $amethystSmoke;
+
+//  COLOR-PALETTE MODIFIERS _ex._ color: palette(grey, x-dark);
+
+$palettes: (
+  grey: (
+    x-light: lighten($grey, 24%),
+    light: lighten($grey, 12%),
+    base: $grey,
+    dark: darken($grey, 8%),
+    x-dark: darken($grey, 16%)
+  ),
+  black: (
+    x-light: lighten($black, 24%),
+    light: lighten($black, 12%),
+    base: $black,
+    dark: darken($black, 8%),
+    x-dark: darken($black, 16%)
+  ),
+);
+
+// UI COLORS
+
+$ui-colors: (
+  default: $white,
+  success: lightblue,
+  warning: $tamarillo,
+  error: $tamarillo,
+);
+
+//  TEXT
+$base__font-size: 16px;
+$base__line-height: 24px;
+
+//  VARIABLES

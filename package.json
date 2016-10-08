@@ -1,0 +1,17 @@
+{
+  "name": "michinori-meteor",
+  "version": "0.0.1",
+  "description": "michinori =>　道のり => journey. A thur-hike tracker.",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "author": "Caleb Bodtorf",
+  "license": "MIT",
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.2",
+    "react-addons-pure-render-mixin": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}

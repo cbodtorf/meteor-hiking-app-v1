@@ -1,0 +1,26 @@
+//==============================================================
+//  UTILITES
+//==============================================================
+
+
+// CALCULATE EMS VALUES
+
+@function em($target, $context: base__font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// CALL THE COLOR PALLETE MODIFIERS
+
+@function palette($palette, $shade: 'base') {
+  @return map-get(map-get($palettes, $palette), $shade);
+}
+
+// MIXINS
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+        &#{$theme} {
+          background-color: $color;
+        }
+  }
+}
