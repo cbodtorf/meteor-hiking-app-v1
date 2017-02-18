@@ -24,6 +24,11 @@ Meteor.methods({
   'entries.remove'(entryId) {
     check(entryId, String);
 
+    // Make sure the user is logged in before removing an entry
+    if (! this.userId) {
+      throw new Meteor.Error('not-authorized');
+    }
+
     Entries.remove(entryId);
   },
 })

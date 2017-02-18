@@ -3,6 +3,8 @@ import ReactDOM             from 'react-dom'
 import { Template }             from 'meteor/templating'
 import { Blaze }                from 'meteor/blaze'
 
+// accounts-ui is great for prototyping, but check this to go further:
+// https://guide.meteor.com/accounts.html
 
 export default class AccountsUIWrapper extends Component {
   componentDidMount() {
